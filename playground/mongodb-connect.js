@@ -28,7 +28,7 @@ MongoClient.connect(url, (err, client) => {
   var users = client.db(dbName).collection('Users');
   users.insertOne({
     name: 'Shaheer',
-    age: '26',
+    age: 26,
     location: 'Mahallah'
   }, (err, result) => {
     if(err) return console.log('unable to insert user', err);
